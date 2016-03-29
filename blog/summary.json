@@ -1,19 +1,33 @@
 {
-  "created": 1459266246944,
+  "created": 1459271032756,
   "blogs": [
+    {
+      "title": "AngularUI Boostrap: 为自定义popover添加双向绑定",
+      "author": "zoujie",
+      "date": "2014-04-19",
+      "desc": null,
+      "name": "angular-tooltip-add-two-way-binding"
+    },
+    {
+      "title": "创建平滑的AngularJS应用",
+      "author": "zoujie",
+      "date": "2014-04-12",
+      "desc": null,
+      "name": "create-smooth-angularjs-app"
+    },
+    {
+      "title": "CSS 水平/垂直居中方法集锦",
+      "author": "zoujie",
+      "date": "2014-05-23",
+      "desc": null,
+      "name": "css-element-center-techniques"
+    },
     {
       "title": "关于浮动的一切",
       "author": "zoujie",
       "date": "2014-03-14",
       "desc": null,
       "name": "everything-about-float"
-    },
-    {
-      "title": "Hello World",
-      "author": "HAHAHA",
-      "date": "2011-01-01",
-      "desc": null,
-      "name": "hello-world"
     }
   ]
 }
