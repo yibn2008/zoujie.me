@@ -2,7 +2,7 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-26 22:23:42
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-30 00:19:34
+* @Last Modified time: 2016-03-29 23:36:37
 */
 
 *, *:before, *:after {
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #efefea;
+  background-color: #F6F6F3;
   font-family: 'PingFang SC', 'Microsoft yahei', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 }
 
@@ -20,20 +20,4 @@ a {
 }
 a:hover {
   color: #000;
-}
-
-#topbar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 10px;
-}
-#topbar a {
-  font-size: 24px;
-  color: #AAA;
-  display: inline-block;
-  padding: 5px;
-}
-#topbar a:hover {
-  color: #666;
 }

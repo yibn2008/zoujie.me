@@ -2,7 +2,7 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-26 23:58:05
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-30 00:13:02
+* @Last Modified time: 2016-03-29 23:54:54
 */
 
 body {
@@ -102,7 +102,6 @@ body {
   overflow: auto;
   line-height: 1.5;
   background-color: #f5f5d5;
-  border: 1px solid #DCDC87;
   border-radius: 5px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;

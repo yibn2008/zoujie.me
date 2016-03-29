@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
+{% include 'topbar.nj' %}
+
 <div id="blog-list">
   <h1>博客列表</h1>
 

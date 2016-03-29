@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Zoujie's Blog</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
 {% block head %}{% endblock %}
 </head>
