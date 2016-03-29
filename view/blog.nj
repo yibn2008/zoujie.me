@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Zoujie's Blog</title>
-<link rel="stylesheet" type="text/css" href="/assets/common.css">
-<link rel="stylesheet" type="text/css" href="/assets/blog.css">
-</head>
-<body>
+{% extends 'layout.nj' %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
+{% endblock %}
+
+{% block body %}
 <div id="blog">
   <h1>{{title}}</h1>
   <div class="meta">
@@ -16,6 +14,4 @@
     {{content | safe}}
   </div>
 </div>
-
-</body>
-</html>
+{% endblock %}

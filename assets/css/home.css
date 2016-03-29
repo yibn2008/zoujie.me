@@ -2,7 +2,7 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-26 22:26:40
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-26 23:38:37
+* @Last Modified time: 2016-03-29 23:56:38
 */
 
 body {
@@ -29,6 +29,7 @@ body {
   margin-bottom: 0 0 50px;
   text-align: center;
   letter-spacing: 3px;
+  color: #DB2828;
 }
 #home ul {
   list-style: none;
@@ -46,7 +47,7 @@ body {
   font-size: 13px;
   border-radius: 10px;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 3px 12px;
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.3);
 }

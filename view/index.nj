@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Zoujie's Blog</title>
-<link rel="stylesheet" type="text/css" href="/assets/common.css">
-<link rel="stylesheet" type="text/css" href="/assets/home.css">
-</head>
-<body>
+{% extends 'layout.nj' %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+{% endblock %}
+
+{% block body %}
 <div id="home">
   <h1>吴邹杰的博客</h1>
 
@@ -15,6 +13,4 @@
     <li><a href="https://github.com/yibn2008">Github</a></li>
   </ul>
 </div>
-
-</body>
-</html>
+{% endblock %}

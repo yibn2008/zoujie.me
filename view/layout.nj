@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zoujie's Blog</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+
+{% block body %}
+{% endblock %}
+
+</body>
+</html>
