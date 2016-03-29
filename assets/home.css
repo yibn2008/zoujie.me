@@ -1,0 +1,56 @@
+/*
+* @Author: zoujie.wzj
+* @Date:   2016-03-26 22:26:40
+* @Last Modified by:   zoujie.wzj
+* @Last Modified time: 2016-03-26 23:38:37
+*/
+
+body {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#home {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  width: 300px;
+  margin: auto;
+}
+
+#home h1 {
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 0 0 50px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+#home ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+#home ul > li {
+  display: inline-block;
+  margin: 0 6px;
+}
+#home ul > li > a {
+  display: block;
+  color: #FFF;
+  font-size: 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px 15px;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#home ul > li > a:hover {
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.6);
+}

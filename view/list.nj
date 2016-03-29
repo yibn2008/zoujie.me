@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zoujie's Blog</title>
+<link rel="stylesheet" type="text/css" href="/assets/common.css">
+<link rel="stylesheet" type="text/css" href="/assets/list.css">
+</head>
+<body>
+
+<div id="blog-list">
+  <h1>博客列表</h1>
+
+  {% if blogs.length %}
+  <ul>
+    {% for blog in blogs %}
+    <li>
+      <a href="/blog/{{blog.name}}">{{blog.title}}</a>
+      <span class="date">{{blog.date}}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="empty-blogs">没有博客 :-(</div>
+  {% endif %}
+
+</div>
+
+</body>
+</html>

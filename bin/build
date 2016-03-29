@@ -1,0 +1,26 @@
+'use strict'
+
+const fs = require('fs')
+const path = require('path')
+const chalk = require('chalk')
+const utils = require('../lib/utils')
+
+const baseDir = path.dirname(__dirname)
+const cacheDir = path.join(baseDir, 'cache')
+
+console.log('正在检查缓存目录 ...')
+
+// make cache dir
+if (!utils.fstat(cacheDir)) {
+  console.log('缓存目录不存在, 正在创建 ...')
+
+  try {
+    fs.mkdirSync(cacheDir)
+    fs.chmodSync(cacheDir, 0o777)
+
+    console.log(chalk.green('创建成功!'))
+  } catch (err) {
+    console.error('出现错误: ', chalk.red(err.stack))
+    process.exit(1)
+  }
+}
