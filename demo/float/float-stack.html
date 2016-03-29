@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>浮动元素的堆叠</title>
+<meta charset="UTF-8">
+<style type="text/css">
+#container {
+  width: 500px;
+  border: #AAAAAA solid 1px;
+}
+.box {
+  width: 300px;
+  border: #CCC solid 1px;
+  padding: 10px;
+  margin: 5px;
+}
+.left {
+  float: left;
+  background-color: #EEEEEE;
+}
+.right {
+  float: right;
+  background-color: #EEB4B4;
+}
+</style>
+</head>
+<body>
+<h1>浮动元素的堆叠</h1>
+
+<div id="container">
+  <div class="box left">left1</div>
+  <div class="box right">right1</div>
+  <div class="box left">left2</div>
+  <div class="box right">right2</div>
+  <div class="box left">left3</div>
+  <div class="box right">right3</div>
+  <div class="box left">left4</div>
+  <div class="box right">right4</div>
+  <div style="clear: both;"></div>
+</div>
+</body>
+</html>

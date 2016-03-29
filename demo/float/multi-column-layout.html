@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>多栏布局</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .container {
+      width: 500px;
+      border: #EEEEEE solid 1px;
+      padding: 5px;
+      clear: both;
+      margin-bottom: 20px;
+    }
+    .sidebar {
+      border: #CCCCCC solid 1px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+    .content {
+      border: #CCCAFF solid 1px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+
+      margin-right: 110px;
+      margin-left: 110px;
+    }
+
+    .sidebar1 {
+      float: left;
+      width: 100px;
+    }
+    .sidebar2 {
+      float: right;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<h1>多栏布局</h1>
+<div class="container">
+  <div class="sidebar sidebar1">Sidebar 1</div>
+  <div class="sidebar sidebar2">Sidebar 2</div>
+  <div class="content">Content</div>
+</div>
+</body>
+</html>

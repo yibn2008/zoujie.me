@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>绝对定位居中</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.margin-center {
+  margin: auto;
+}
+
+.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.negative-margin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.transform-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* table center */
+.table-center {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.center-content {
+  display: table;
+  margin: auto;
+}
+
+/* This parent can be any width and height */
+.inline-block-center {
+  text-align: center;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.inline-block-center:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
+}
+
+/* The element to be centered, can
+   also be of any width and height */
+.inline-block-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+/* frame styles */
+#frame-table {
+  margin-left: 20px;
+}
+#frame-table td {
+  vertical-align: top;
+}
+.code-pre {
+  color: #3354AA;
+  white-space: pre;
+  padding-top: 60px;
+  padding-left: 30px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.box {
+  border: #000000 solid 1px;
+}
+
+.fix-size {
+  background-color: #3354AA;
+  height: 100px;
+  width: 100px;
+}
+
+.varible-size {
+  background-color: #FF6600;
+  display: table;
+  width: auto;
+  height: auto;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  float: left;
+  border: #000000 solid 1px;
+  position: relative;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+
+<table id="frame-table">
+  <tr>
+    <td>
+      <h2 id="absolute-center">绝对居中</h2>
+
+      <div class="container">
+        <div class="box absolute-center fix-size">固定宽</div>
+      </div>
+    </td>
+    <td class="code-pre">.absolute-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}</td>
+  </tr>
+  <tr>
+    <td><h2 id="negative-margin">负外边距居中</h2>
+      <div class="container">
+        <div class="box negative-margin fix-size">negative</div>
+      </div></td>
+    <td class="code-pre">.negative-margin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}</td>
+  </tr>
+  <tr>
+    <td><h2 id="transform-center">CSS变换居中(transform)</h2>
+      <div class="container">
+        <div class="box transform-center fix-size">transform</div>
+      </div></td>
+    <td class="code-pre">.transform-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}</td>
+  </tr>
+  <tr>
+    <td><h2 id="table-center">表格居中</h2>
+      <div class="container table-center">
+        <div class="table-cell">
+          <div class="box center-content fix-size">table</div>
+        </div>
+      </div></td>
+    <td class="code-pre">.table-center {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.center-content {
+  display: table;
+  margin: auto;
+}</td>
+  </tr>
+  <tr>
+    <td><h2 id="inline-block-center">行内块级元素居中</h2>
+      <div class="container inline-block-center">
+        <div class="box inline-block-content">inline block</div>
+      </div></td>
+    <td class="code-pre">.inline-block-center {
+  text-align: center;
+}
+.inline-block-center:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -0.25em;
+}
+.inline-block-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}</td>
+  </tr>
+</table>
+
+</body>
+</html>

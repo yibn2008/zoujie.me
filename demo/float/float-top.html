@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>浮动元素的顶端对齐</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    #container {
+      width: 500px;
+      border: #AAAAAA solid 1px;
+    }
+    .box {
+      width: 300px;
+      border: #CCC solid 1px;
+      padding: 10px;
+      margin: 5px;
+    }
+    .left {
+      float: left;
+      background-color: #EEEEEE;
+    }
+    .right {
+      float: right;
+      background-color: #EEB4B4;
+    }
+    .small {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<h1>浮动元素的顶端对齐</h1>
+
+<div id="container">
+  <div class="box left">left1</div>
+  <div class="box left">left2</div>
+  <div>normal text</div>
+  <div>normal text</div>
+  <div>normal text</div>
+  <div>normal text</div>
+
+  <div class="box left small">left3</div>
+  <div class="box left">left4</div>
+  <div class="box left">left5</div>
+  <div class="box right small">right1</div>
+  <div style="clear: both;"></div>
+</div>
+</body>
+</html>

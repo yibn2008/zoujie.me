@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>浮动元素重叠</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    #container {
+      width: 300px;
+      border: #EEEEEE solid 1px;
+      padding: 5px;
+      color: #c71585;
+      line-height: 1.5em;
+    }
+    img {
+      float: left;
+      margin-right: -30px;
+      border: #3354AA 1px solid;
+      padding: 1px;
+    }
+    strong {
+      border: solid 1px #FF6600;
+      background-color: #FFF1A8;
+    }
+    .block {
+      background-color: #EEEEEE;
+    }
+  </style>
+</head>
+
+<body>
+<h1>浮动元素的重叠</h1>
+<div id="container">
+  <img src="../img/100.jpg">
+  <p>Inline text, Inline text, Inline text, <strong>Inline text, Inline text</strong>.</p>
+  <p class="block">Block Element~~~~~~~</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>两栏布局</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .container {
+      width: 500px;
+      border: #EEEEEE solid 1px;
+      padding: 5px;
+      clear: both;
+      margin-bottom: 20px;
+    }
+    .sidebar {
+      border: #CCCCCC solid 1px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+    .content {
+      border: #CCCAFF solid 1px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .A .sidebar {
+      width: 150px;
+      float: left;
+    }
+    .A .content {
+      margin-left: 160px;
+    }
+
+    .B .sidebar {
+      float: right;
+      width: 150px;
+    }
+    .B .content {
+      margin-right: 160px;
+    }
+  </style>
+</head>
+<body>
+<h1>两栏布局</h1>
+<h3>情况A</h3>
+<div class="container A">
+  <div class="sidebar">sidebar</div>
+  <div class="content">content</div>
+</div>
+<h3>情况B</h3>
+<div class="container B">
+  <div class="sidebar">sidebar</div>
+  <div class="content">content</div>
+</div>
+</body>
+</html>

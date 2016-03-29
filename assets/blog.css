@@ -2,7 +2,7 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-26 23:58:05
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-27 00:36:47
+* @Last Modified time: 2016-03-29 23:23:33
 */
 
 body {
@@ -16,8 +16,9 @@ body {
 }
 #blog h1 {
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
   margin: 0 0 16px;
+  font-weight: normal;
 }
 #blog .meta {
   text-align: center;
@@ -141,8 +142,20 @@ body {
   content: normal;
 }
 
+.blog-body ul,
+.blog-body ol {
+  padding-left: 22px;
+}
+
 .blog-body img {
-  max-width: 100%;
+  width: 100%;
+  border: #CCC solid 1px;
+  border-radius: 5px;
+  background-color: #FFF;
+  padding: 10px;
+}
+.blog-body img:hover {
+  box-shadow: 0 0 8px #CCC;
 }
 
 /* document bottom style */
