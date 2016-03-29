@@ -14,7 +14,7 @@
   <ul>
     {% for blog in blogs %}
     <li>
-      <a href="/blog/{{blog.name}}">{{blog.title}}</a>
+      <a class="title" href="/blog/{{blog.name}}">{{blog.title}}</a>
       <span class="date">{{blog.date}}</span>
     </li>
     {% endfor %}

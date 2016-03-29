@@ -11,7 +11,7 @@
   <h1>吴邹杰的博客</h1>
 
   <ul>
-    <li><a href="/blog/list">博客列表</a></li>
+    <li><a href="/blog-list">博客列表</a></li>
     <li><a href="https://github.com/yibn2008">Github</a></li>
   </ul>
 </div>

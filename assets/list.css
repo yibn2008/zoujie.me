@@ -2,5 +2,50 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-29 22:57:51
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-29 22:58:27
+* @Last Modified time: 2016-03-29 23:51:12
 */
+
+#blog-list {
+  width: 600px;
+  margin: 50px auto;
+}
+
+#blog-list h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 30px;
+  color: #DB2828;
+}
+#blog-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#blog-list ul > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+#blog-list ul > li:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-top: #CCC dashed 1px;
+  z-index: -1;
+}
+#blog-list ul > li .title {
+  background-color: #F6F6F3;
+  padding-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+#blog-list ul > li .date {
+  background-color: #F6F6F3;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  float: right;
+}
