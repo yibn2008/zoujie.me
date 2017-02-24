@@ -3,4 +3,5 @@ node_modules/
 cache/
 
 .DS_Store
+deploy.sh
 *.log

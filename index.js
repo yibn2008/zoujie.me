@@ -2,7 +2,7 @@
 * @Author: zoujie.wzj
 * @Date:   2016-03-26 21:17:16
 * @Last Modified by:   zoujie.wzj
-* @Last Modified time: 2016-03-29 23:28:15
+* @Last Modified time: 2017-02-24 18:44:27
 */
 
 'use strict'
@@ -43,4 +43,5 @@ app.use(router.allowedMethods())
 // listen
 app.listen(PORT)
 
+console.log('部署 Key: ', process.env.DEPLOY_KEY)
 console.log('开始监听 %s ...', chalk.cyan(`http://localhost:${PORT}`))
